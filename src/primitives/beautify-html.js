@@ -71,8 +71,8 @@
 */
 
 define([
-    "skylark-utils-css/beautify",
-    "skylark-utils-js/beautify"
+    "skylark-markups-css/beautify",
+    "skylark-scripts-js/beautify"
 ], function(beautifyCss, beautifyHtml) {
 
     function trim(s) {

@@ -1,5 +1,5 @@
 {
-  "name": "skylark-utils-html",
+  "name": "skylark-markups-html",
   "version": "0.9.0",
   "description": "The html features enhancement for skylark utils.",
   "main": "-",
@@ -10,7 +10,7 @@
   "homepage": "www.skylarkjs.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skylarkjs/skylark-utils-html.git"
+    "url": "git+https://github.com/skylark-markups/skylark-markups-html.git"
   },
   "keywords": [
     "skylark",
@@ -24,11 +24,9 @@
   "license": "MIT",
   "bugs": "https://github.com/skylarkjs/skylark/issues",
   "devDependencies": {
-    "skylark-langx": "https://github.com/skylarklangx/skylark-langx#master",
-    "skylark-utils": "https://github.com/skylarkutils/skylark-utils#master",
-    "skylark-utils-css": "https://github.com/skylarkutils/skylark-utils-css#master",
-    "skylark-utils-js": "https://github.com/skylarkutils/skylark-utils-js#master",
-    "skylark-utils-dom": "https://github.com/skylarkutils/skylark-utils-dom#master"
+    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
+    "skylark-markups-css": "git+https://github.com/skylark-markups/skylark-markups-css.git#master",
+    "skylark-scripts-js": "git+https://github.com/skylark-scripts/skylark-scripts-js.git#master"
   },
   "engines": {
     "node": ">=0.8.0"

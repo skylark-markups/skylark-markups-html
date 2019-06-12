@@ -1,4 +1,4 @@
-# skylark-utils-html
+# skylark-markups-html
 The skylark html utility library
 
 ## Dependences
@@ -6,10 +6,8 @@ The skylark html utility library
 | Project                                                      | Status | Description                            |
 | ------------------------------------------------------------ | ------ | -------------------------------------- |
 | [skylark-langx](https://github.com/skylarklangx/skylark-langx) |        | Javascript language extension library  |
-| [skylark-utils](https://github.com/skylarkutils/skylark-utils) |        | An Universal HTML5 Javascript Library  |
-| [skylark-utils-css](https://github.com/skylarkutils/skylark-utils-css) |        | The skylark css utility library        |
-| [skylark-utils-js](https://github.com/skylarkutils/skylark-utils-js) |        | The skylark javascript utility library |
-| [skylark-utils-dom](https://github.com/skylarkutils/skylark-utils-dom) |        | An Universal DOM Utility Library       |
+| [skylark-markups-css](https://github.com/skylark-markups/skylark-markups-css) |        | The skylark css utility library        |
+| [skylark-scripts-js](https://github.com/skylark-scripts/skylark-scripts-js) |        | The skylark javascript utility library |
 
 ## Different builds
 
@@ -17,10 +15,10 @@ builds are in the directory dist.
 
 |                      | build                                  | Description              |
 | -------------------- | -------------------------------------- | ------------------------ |
-| full                 | skylark-utils-html-all.js              | included dependences     |
-| only                 | skylark-utils-html.js                  | not included dependences |
-| full （development） | uncompressed/skylark-utils-html-all.js | included dependences     |
-| only （development） | uncompressed/skylark-utils-html.js     | not included dependences |
+| full                 | skylark-markups-html-all.js              | included dependences     |
+| only                 | skylark-markups-html.js                  | not included dependences |
+| full （development） | uncompressed/skylark-markups-html-all.js | included dependences     |
+| only （development） | uncompressed/skylark-markups-html.js     | not included dependences |
 
 Please use the "full" version when using this library alone, and use the "only" version when using other skylark libraries.
 
@@ -28,9 +26,9 @@ Please use the "full" version when using this library alone, and use the "only" 
 
 You can get the latest version in many different ways:
 
-- Downloading [a ZIP file from master](https://github.com/skylarkutils/skylark-utils-html/archive/master.zip)
-- Cloning using Git: `git clone https://github.com/skylarkutils/skylark-utils-html.git`
-- Installing via NPM: `npm install https://github.com/skylarkutils/skylark-utils-html.git#master --save`
+- Downloading [a ZIP file from master](https://github.com/skylarkutils/skylark-markups-html/archive/master.zip)
+- Cloning using Git: `git clone https://github.com/skylark-markups/skylark-markups-html.git`
+- Installing via NPM: `npm install https://github.com/skylark-markups/skylark-markups-html.git#master --save`
 
 ## Building 
 

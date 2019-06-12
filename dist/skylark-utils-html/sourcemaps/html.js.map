@@ -1,1 +1,0 @@
-{"version":3,"sources":["html.js"],"names":["define","skylark","html"],"mappings":";;;;;;;AAAAA,QACI,yBACD,SAASC,GACX,MAAOA,GAAQC,KAAOD,EAAQC","file":"../html.js","sourcesContent":["define([\r\n    \"skylark-utils/skylark\"\r\n], function(skylark) {\r\n\treturn skylark.html = skylark.html || {};\r\n});"]}
