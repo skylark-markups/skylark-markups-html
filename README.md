@@ -1,4 +1,4 @@
-# skylark-markups-html
+# skylark-parsers-html
 The skylark html utility library
 
 ## Dependences
@@ -6,8 +6,8 @@ The skylark html utility library
 | Project                                                      | Status | Description                            |
 | ------------------------------------------------------------ | ------ | -------------------------------------- |
 | [skylark-langx](https://github.com/skylarklangx/skylark-langx) |        | Javascript language extension library  |
-| [skylark-markups-css](https://github.com/skylark-markups/skylark-markups-css) |        | The skylark css utility library        |
-| [skylark-scripts-js](https://github.com/skylark-scripts/skylark-scripts-js) |        | The skylark javascript utility library |
+| [skylark-parsers-css](https://github.com/skylark-parsers/skylark-parsers-css) |        | The skylark css utility library        |
+| [skylark-parsers-javascript](https://github.com/skylark-parsers/skylark-parsers-javascript) |        | The skylark javascript utility library |
 
 ## Different builds
 
@@ -15,10 +15,10 @@ builds are in the directory dist.
 
 |                      | build                                  | Description              |
 | -------------------- | -------------------------------------- | ------------------------ |
-| full                 | skylark-markups-html-all.js              | included dependences     |
-| only                 | skylark-markups-html.js                  | not included dependences |
-| full （development） | uncompressed/skylark-markups-html-all.js | included dependences     |
-| only （development） | uncompressed/skylark-markups-html.js     | not included dependences |
+| full                 | skylark-parsers-html-all.js              | included dependences     |
+| only                 | skylark-parsers-html.js                  | not included dependences |
+| full （development） | uncompressed/skylark-parsers-html-all.js | included dependences     |
+| only （development） | uncompressed/skylark-parsers-html.js     | not included dependences |
 
 Please use the "full" version when using this library alone, and use the "only" version when using other skylark libraries.
 
@@ -26,9 +26,9 @@ Please use the "full" version when using this library alone, and use the "only" 
 
 You can get the latest version in many different ways:
 
-- Downloading [a ZIP file from master](https://github.com/skylarkutils/skylark-markups-html/archive/master.zip)
-- Cloning using Git: `git clone https://github.com/skylark-markups/skylark-markups-html.git`
-- Installing via NPM: `npm install https://github.com/skylark-markups/skylark-markups-html.git#master --save`
+- Downloading [a ZIP file from master](https://github.com/skylark-parsers/skylark-parsers-html/archive/master.zip)
+- Cloning using Git: `git clone https://github.com/skylark-parsers/skylark-parsers-html.git`
+- Installing via NPM: `npm install https://github.com/skylark-parsers/skylark-parsers-html.git#master --save`
 
 ## Building 
 
