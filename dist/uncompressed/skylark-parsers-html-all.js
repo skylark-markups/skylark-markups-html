@@ -1,5 +1,5 @@
 /**
- * skylark-markups-html - The html features enhancement for skylark utils.
+ * skylark-parsers-html - The html features enhancement for skylark utils.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -115,12 +115,12 @@ define('skylark-langx/skylark',[
     return skylark;
 });
 
-define('skylark-markups-html/html',[
+define('skylark-parsers-html/html',[
     "skylark-langx/skylark"
 ], function(skylark) {
 	return skylark.attach("domx.html",{});
 });
-define('skylark-markups-css/css',[
+define('skylark-parsers-css/css',[
     "skylark-langx/skylark"
 ], function(skylark) {
 	
@@ -186,7 +186,7 @@ define('skylark-markups-css/css',[
 // http://www.w3.org/TR/CSS21/syndata.html#tokenization
 // http://www.w3.org/TR/css3-syntax/
 
-define('skylark-markups-css/primitives/beautify-css',[],function() {
+define('skylark-parsers-css/primitives/beautify-css',[],function() {
     function css_beautify(source_text, options) {
         options = options || {};
         var indentSize = options.indent_size || 4;
@@ -549,14 +549,14 @@ define('skylark-markups-css/primitives/beautify-css',[],function() {
     };
 });
 
-define('skylark-markups-css/beautify',[
+define('skylark-parsers-css/beautify',[
     "./css",
     "./primitives/beautify-css"
 ], function(css, beautifyCss) {
 
 	return css.beautify = beautifyCss.css_beautify;
 });
-define('skylark-scripts-js/js',[
+define('skylark-parsers-javascript/js',[
     "skylark-langx/skylark"
 ], function(skylark) {
 	
@@ -648,7 +648,7 @@ define('skylark-scripts-js/js',[
 
 */
 
-define('skylark-scripts-js/primitives/beautify-js',[],function() {
+define('skylark-parsers-javascript/primitives/beautify-js',[],function() {
 
     var acorn = {};
     (function (exports) {
@@ -2478,7 +2478,7 @@ define('skylark-scripts-js/primitives/beautify-js',[],function() {
     return { js_beautify: js_beautify };
 });
 
-define('skylark-scripts-js/beautify',[
+define('skylark-parsers-javascript/beautify',[
     "./js",
     "./primitives/beautify-js"
 ], function(js, beautifyJs) {
@@ -2557,9 +2557,9 @@ define('skylark-scripts-js/beautify',[
     });
 */
 
-define('skylark-markups-html/primitives/beautify-html',[
-    "skylark-markups-css/beautify",
-    "skylark-scripts-js/beautify"
+define('skylark-parsers-html/primitives/beautify-html',[
+    "skylark-parsers-css/beautify",
+    "skylark-parsers-javascript/beautify"
 ], function(beautifyCss, beautifyHtml) {
 
     function trim(s) {
@@ -3343,21 +3343,21 @@ define('skylark-markups-html/primitives/beautify-html',[
 
 });
 
-define('skylark-markups-html/beautify',[
+define('skylark-parsers-html/beautify',[
     "./html",
     "./primitives/beautify-html"
 ], function(html, beautifyHtml) {
 
 	return html.beautify = beautifyHtml.html_beautify;
 });
-define('skylark-markups-html/main',[
+define('skylark-parsers-html/main',[
     "./html",
     "./beautify"
 ], function(html) {
     return html;
 });
 
-define('skylark-markups-html', ['skylark-markups-html/main'], function (main) { return main; });
+define('skylark-parsers-html', ['skylark-parsers-html/main'], function (main) { return main; });
 
 
 },this);

@@ -1,5 +1,5 @@
 /**
- * skylark-markups-html - The html features enhancement for skylark utils.
+ * skylark-parsers-html - The html features enhancement for skylark utils.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-markups-html/html',[
+define('skylark-parsers-html/html',[
     "skylark-langx/skylark"
 ], function(skylark) {
 	return skylark.attach("domx.html",{});
@@ -163,9 +163,9 @@ define('skylark-markups-html/html',[
     });
 */
 
-define('skylark-markups-html/primitives/beautify-html',[
-    "skylark-markups-css/beautify",
-    "skylark-scripts-js/beautify"
+define('skylark-parsers-html/primitives/beautify-html',[
+    "skylark-parsers-css/beautify",
+    "skylark-parsers-javascript/beautify"
 ], function(beautifyCss, beautifyHtml) {
 
     function trim(s) {
@@ -949,22 +949,22 @@ define('skylark-markups-html/primitives/beautify-html',[
 
 });
 
-define('skylark-markups-html/beautify',[
+define('skylark-parsers-html/beautify',[
     "./html",
     "./primitives/beautify-html"
 ], function(html, beautifyHtml) {
 
 	return html.beautify = beautifyHtml.html_beautify;
 });
-define('skylark-markups-html/main',[
+define('skylark-parsers-html/main',[
     "./html",
     "./beautify"
 ], function(html) {
     return html;
 });
 
-define('skylark-markups-html', ['skylark-markups-html/main'], function (main) { return main; });
+define('skylark-parsers-html', ['skylark-parsers-html/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-markups-html.js.map
+//# sourceMappingURL=sourcemaps/skylark-parsers-html.js.map
