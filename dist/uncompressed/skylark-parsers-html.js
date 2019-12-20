@@ -166,7 +166,7 @@ define('skylark-parsers-html/html',[
 define('skylark-parsers-html/primitives/beautify-html',[
     "skylark-parsers-css/beautify",
     "skylark-parsers-javascript/beautify"
-], function(beautifyCss, beautifyHtml) {
+], function(beautifyCss, beautifyJs) {
 
     function trim(s) {
         return s.replace(/^\s+|\s+$/g, '');

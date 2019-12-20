@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-langx/_attach',[],function(){
+define('skylark-langx-ns/_attach',[],function(){
     return  function attach(obj1,path,obj2) {
         if (typeof path == "string") {
             path = path.split(".");//[path]
@@ -104,7 +104,7 @@ define('skylark-langx/_attach',[],function(){
         return ns[name] = obj2;
     }
 });
-define('skylark-langx/skylark',[
+define('skylark-langx-ns/ns',[
     "./_attach"
 ], function(_attach) {
     var skylark = {
@@ -113,6 +113,19 @@ define('skylark-langx/skylark',[
     	}
     };
     return skylark;
+});
+
+define('skylark-langx-ns/main',[
+	"./ns"
+],function(skylark){
+	return skylark;
+});
+define('skylark-langx-ns', ['skylark-langx-ns/main'], function (main) { return main; });
+
+define('skylark-langx/skylark',[
+    "skylark-langx-ns"
+], function(ns) {
+	return ns;
 });
 
 define('skylark-parsers-html/html',[
@@ -2560,7 +2573,7 @@ define('skylark-parsers-javascript/beautify',[
 define('skylark-parsers-html/primitives/beautify-html',[
     "skylark-parsers-css/beautify",
     "skylark-parsers-javascript/beautify"
-], function(beautifyCss, beautifyHtml) {
+], function(beautifyCss, beautifyJs) {
 
     function trim(s) {
         return s.replace(/^\s+|\s+$/g, '');
