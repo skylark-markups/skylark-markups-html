@@ -1,5 +1,5 @@
 {
-  "name": "skylark-parsers-html",
+  "name": "skylark-texts-html",
   "version": "0.9.0",
   "description": "The html features enhancement for skylark utils.",
   "main": "-",
@@ -10,7 +10,7 @@
   "homepage": "www.skylarkjs.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skylark-parsers/skylark-parsers-html.git"
+    "url": "git+https://github.com/skylark-texts/skylark-texts-html.git"
   },
   "keywords": [
     "skylark",
@@ -24,9 +24,9 @@
   "license": "MIT",
   "bugs": "https://github.com/skylarkjs/skylark/issues",
   "dependencies": {
-    "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
-    "skylark-parsers-css": "git+https://github.com/skylark-parsers/skylark-parsers-css.git#master",
-    "skylark-parsers-javascript": "git+https://github.com/skylark-parsers/skylark-parsers-javascript.git#master"
+    "skylark-langx": "git+https://github.com/skylark-langx/skylark-langx.git#master",
+    "skylark-texts-css": "git+https://github.com/skylark-texts/skylark-texts-css.git#master",
+    "skylark-scripts-javascript": "git+https://github.com/skylark-scripts/skylark-scripts-javascript.git#master"
   },
   "engines": {
     "node": ">=0.8.0"

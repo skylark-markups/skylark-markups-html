@@ -1,5 +1,5 @@
 /**
- * skylark-parsers-html - The html features enhancement for skylark utils.
+ * skylark-texts-html - The html features enhancement for skylark utils.
  * @author Hudaokeji Co.,Ltd
  * @version v0.9.0
  * @link www.skylarkjs.org
@@ -75,7 +75,7 @@
   factory(define,require);
 
   if (!isAmd) {
-    var skylarkjs = require("skylark-langx/skylark");
+    var skylarkjs = require("skylark-langx-ns");
 
     if (isCmd) {
       module.exports = skylarkjs;
@@ -86,7 +86,7 @@
 
 })(function(define,require) {
 
-define('skylark-parsers-html/html',[
+define('skylark-texts-html/html',[
     "skylark-langx/skylark"
 ], function(skylark) {
 	return skylark.attach("domx.html",{});
@@ -163,9 +163,9 @@ define('skylark-parsers-html/html',[
     });
 */
 
-define('skylark-parsers-html/primitives/beautify-html',[
-    "skylark-parsers-css/beautify",
-    "skylark-parsers-javascript/beautify"
+define('skylark-texts-html/primitives/beautify-html',[
+    "skylark-texts-css/beautify",
+    "skylark-scripts-javascript/beautify"
 ], function(beautifyCss, beautifyJs) {
 
     function trim(s) {
@@ -949,22 +949,22 @@ define('skylark-parsers-html/primitives/beautify-html',[
 
 });
 
-define('skylark-parsers-html/beautify',[
+define('skylark-texts-html/beautify',[
     "./html",
     "./primitives/beautify-html"
 ], function(html, beautifyHtml) {
 
 	return html.beautify = beautifyHtml.html_beautify;
 });
-define('skylark-parsers-html/main',[
+define('skylark-texts-html/main',[
     "./html",
     "./beautify"
 ], function(html) {
     return html;
 });
 
-define('skylark-parsers-html', ['skylark-parsers-html/main'], function (main) { return main; });
+define('skylark-texts-html', ['skylark-texts-html/main'], function (main) { return main; });
 
 
 },this);
-//# sourceMappingURL=sourcemaps/skylark-parsers-html.js.map
+//# sourceMappingURL=sourcemaps/skylark-texts-html.js.map
