@@ -25,8 +25,8 @@
   "bugs": "https://github.com/skylarkjs/skylark/issues",
   "dependencies": {
     "skylark-langx": "git+https://github.com/skylark-langx/skylark-langx.git#master",
-    "skylark-texts-css": "git+https://github.com/skylark-texts/skylark-texts-css.git#master",
-    "skylark-scripts-javascript": "git+https://github.com/skylark-scripts/skylark-scripts-javascript.git#master"
+    "skylark-scripts-javascript": "git+https://github.com/skylark-scripts/skylark-scripts-javascript.git#master",
+    "skylark-texts-css": "git+https://github.com/skylark-texts/skylark-texts-css.git#master"
   },
   "engines": {
     "node": ">=0.8.0"
