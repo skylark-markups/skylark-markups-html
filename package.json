@@ -4,7 +4,7 @@
   "description": "The html features enhancement for skylark utils.",
   "main": "-",
   "scripts": {
-    "build": "sbundle build .",
+    "build": "slib build .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "www.skylarkjs.org",
@@ -25,7 +25,7 @@
   "bugs": "https://github.com/skylarkjs/skylark/issues",
   "dependencies": {
     "skylark-langx": "git+https://github.com/skylark-langx/skylark-langx.git",
-    "skylark-scripts-javascript": "git+https://github.com/skylark-scripts/skylark-scripts-javascript.git",
+    "skylark-texts-javascript": "git+https://github.com/skylark-texts/skylark-texts-javascript.git",
     "skylark-texts-css": "git+https://github.com/skylark-texts/skylark-texts-css.git"
   },
   "engines": {

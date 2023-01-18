@@ -72,7 +72,7 @@
 
 define([
     "skylark-texts-css/beautify",
-    "skylark-scripts-javascript/beautify"
+    "skylark-texts-javascript/beautify"
 ], function(beautifyCss, beautifyJs) {
 
     function trim(s) {
